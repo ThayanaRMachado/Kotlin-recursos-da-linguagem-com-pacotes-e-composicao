@@ -1,4 +1,5 @@
 import br.com.alura.bytebank.modelo.Endereco
+import br.com.alura.bytebank.teste.testaAutenticacaoTiposDiferentes
 
 fun main() {
     val endereco = Endereco()
@@ -12,9 +13,12 @@ fun main() {
     println(teste)
 
     testaFuncionarios()
+
+    testaAutenticacaoTiposDiferentes()
 }
 
 fun imprime(valor: Any) : Any{
     println(valor)
     return valor
 }
+

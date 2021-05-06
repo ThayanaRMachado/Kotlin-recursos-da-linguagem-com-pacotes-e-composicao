@@ -8,6 +8,20 @@ class SistemaInterno {
         } else {
             println("Falha na autenticação")
         }
+
+        when (admin) {
+            is FuncionarioAdmin -> {
+                println("Opções admin")
+            }
+            is Funcionario -> {
+                println("Opções funcionário")
+            }
+            else -> {
+                println("Opções reduzidas")
+            }
+        }
     }
+
+
 
 }
