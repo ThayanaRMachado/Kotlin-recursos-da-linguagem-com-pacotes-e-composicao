@@ -1,5 +1,5 @@
-import modelo.Analista
-import modelo.*
+import br.com.alura.bytebank.modelo.Analista
+import br.com.alura.bytebank.modelo.*
 
 fun testaFuncionarios() {
     val alex = Analista(
