@@ -1,6 +1,5 @@
 import br.com.alura.bytebank.modelo.*
 
-
 fun main() {
     val fran = object : Autenticavel {
         val nome: String = "Fran"
@@ -21,5 +20,5 @@ fun main() {
 
     testaContasDiferentes()
 
-    println("Total de contas: $totalContas")
+    println("Total de contas: ${Conta.total}")
 }
