@@ -2,19 +2,20 @@ import br.com.alura.bytebank.modelo.Endereco
 import br.com.alura.bytebank.teste.testaAutenticacaoTiposDiferentes
 
 fun main() {
-    val endereco = Endereco()
+    val endereco = Endereco(logradouro = "Vila Vergueiro", complemento = "Alura")
+    val enderecoNovo = Endereco(bairro = "Vila Mariana", numero = 1000)
 
-    val objeto: Any = Any()
+    println(endereco.equals(endereco))
 
-    imprime(Any())
-    imprime(1)
-    imprime(1.0)
-    val teste : Any = imprime(endereco)
-    println(teste)
+    //hashCode-Faz a identificação real do objeto
+    println(endereco.hashCode())
+    println(enderecoNovo.hashCode())
 
-    testaFuncionarios()
+    //toString - Retorna a representação do objeto
+    println(endereco.toString())
+    println(enderecoNovo.toString())
 
-    testaAutenticacaoTiposDiferentes()
+    println("${endereco.javaClass}@${Integer.toHexString(endereco.hashCode())}")
 }
 
 fun imprime(valor: Any) : Any{
